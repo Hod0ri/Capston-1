@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/rounded_coner"
+        android:gravity="center"
+        android:elevation="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#535353"
+            android:paddingBottom="10dp"
+            android:text="Login" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#737373"
+            android:layout_marginBottom="30dp"
+            />
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Enter your ID"
+            android:textColorHint="#cccccc"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:privateImeOptions="defaultInputmode=english"
+            android:textColor="#2C2C2C"
+            />
+
+        <EditText
+            android:id="@+id/edt_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:hint="Enter your Password"
+            android:layout_marginBottom="18dp"
+            android:textColorHint="#cccccc"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00CDFF"
+            android:text="Sign In"
+            android:layout_marginBottom="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/tbtn_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget you ID/Pw?"
+                android:layout_marginRight="90dp"
+                android:textSize="12dp"
+                android:textColor="#454444"
+                />
+            <TextView
+                android:id="@+id/tbtn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textSize="12dp"
+                android:textColor="#454444"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

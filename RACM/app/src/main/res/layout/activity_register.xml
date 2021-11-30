@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/rounded_coner"
+        android:gravity="center"
+        android:elevation="300dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:textColor="#535353"
+            android:text="Sign Up" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#737373"
+            android:layout_marginBottom="30dp"
+            />
+        <EditText
+            android:id="@+id/edt_IdValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Enter your ID"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            />
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:hint="Enter your Password"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/edt_Password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:hint="Enter Password Again"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/edt_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Enter your NickName"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            />
+        <EditText
+            android:id="@+id/edt_phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:hint="Enter your PhoneNumber"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            android:inputType="phone"
+            />
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_box_style"
+            android:drawableStart="@drawable/address"
+            android:drawablePadding="10dp"
+            android:hint="Enter your Address"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            android:textColor="#2C2C2C"
+            android:privateImeOptions="defaultInputmode=korean"
+            />
+        <CheckBox
+            android:id="@+id/chk_agree"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="이용약관에 동의하십니까?"
+            android:textColor="#3C3C3C"
+            android:textSize="10dp"
+            android:buttonTint="#6482DC"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_rcancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:backgroundTint="#cccccc"
+                android:layout_marginRight="35dp"
+                />
+            <Button
+                android:id="@+id/btn_registerSubmit"
+                android:enabled="false"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:backgroundTint="#25A2E4"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
