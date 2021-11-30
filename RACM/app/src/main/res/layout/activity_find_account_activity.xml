@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/find_layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     android:background="@drawable/background"
-    tools:context=".LoginActivity">
+    tools:context=".FindAccountActivity">
 
     <LinearLayout
         android:layout_width="300dp"
@@ -17,7 +17,7 @@
         android:padding="30dp"
         android:background="@drawable/rounded_coner"
         android:gravity="center"
-        android:elevation="50dp"
+        android:elevation="300dp"
         >
 
         <TextView
@@ -25,9 +25,9 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:textColor="#535353"
             android:paddingBottom="10dp"
-            android:text="Login" />
+            android:textColor="#535353"
+            android:text="Forget your Account?" />
         <View
             android:layout_width="match_parent"
             android:layout_height="2px"
@@ -35,82 +35,53 @@
             android:layout_marginBottom="30dp"
             />
         <EditText
-            android:id="@+id/edt_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_box_style"
             android:drawableStart="@drawable/user"
             android:drawablePadding="10dp"
             android:hint="Enter your ID"
-            android:textColorHint="#cccccc"
             android:layout_marginBottom="10dp"
             android:padding="5dp"
+            android:textColorHint="#cccccc"
             android:textSize="14dp"
-            android:privateImeOptions="defaultInputmode=english"
             android:textColor="#2C2C2C"
             />
 
         <EditText
-            android:id="@+id/edt_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_box_style"
-            android:drawableStart="@drawable/padlock"
+            android:drawableStart="@drawable/phone"
             android:drawablePadding="10dp"
-            android:hint="Enter your Password"
-            android:layout_marginBottom="10dp"
-            android:textColorHint="#cccccc"
+            android:hint="Enter your Phone Number"
+            android:layout_marginBottom="18dp"
             android:padding="5dp"
+            android:textColorHint="#cccccc"
             android:textSize="14dp"
             android:textColor="#2C2C2C"
-            android:inputType="textPassword"
-            />
-
-        <TextView
-            android:id="@+id/lb_warn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FF0000"
-            android:text="올바르지 않은 정보입니다!"
-            android:layout_marginBottom="10dp"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/btn_signin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00CDFF"
-            android:text="Sign In"
-            android:layout_marginBottom="8dp"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
-            >
-            <TextView
-                android:id="@+id/tbtn_forget"
-                android:layout_width="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_fcancel"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Forget you ID/Pw?"
-                android:layout_marginRight="90dp"
-                android:textSize="12dp"
-                android:textColor="#454444"
+                android:text="Cancel"
+                android:backgroundTint="#cccccc"
+                android:layout_marginRight="35dp"
                 />
-            <TextView
-                android:id="@+id/tbtn_signup"
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Sign up"
-                android:textSize="12dp"
-                android:textColor="#454444"
+                android:text="Done"
+                android:backgroundTint="#25A2E4"
                 />
-
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 
 </LinearLayout>
