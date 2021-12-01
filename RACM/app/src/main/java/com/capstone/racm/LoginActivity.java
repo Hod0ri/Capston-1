@@ -43,8 +43,8 @@ public class LoginActivity extends AppCompatActivity {
                 // Login Process  (Temp Account : admin, 1q2w3e4r!)
                 if(id.isEmpty() || passwd.isEmpty()) {
 
-                } else if(id.equals("admin") && passwd.equals("1q2w3e4r!")) {
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                } else if(id.equals("admin") && passwd.equals("1q2w3e4r")) {
+                    Intent intent = new Intent(getApplicationContext(), DashActivity.class);
                     startActivity(intent);
                 } else if(id.equals("admin") && !passwd.equals("1q2w3e4r!")) {
                     lb_warn.setText("비밀번호가 일치하지 않습니다!");

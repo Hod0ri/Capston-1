@@ -16,4 +16,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.RACM.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RACM.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.RACM.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

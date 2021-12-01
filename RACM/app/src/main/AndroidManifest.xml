@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RACM">
         <activity
+            android:name=".DashActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dash"
+            android:theme="@style/Theme.RACM.NoActionBar" />
+        <activity
             android:name=".FindAccountActivity"
             android:exported="false" />
         <activity
