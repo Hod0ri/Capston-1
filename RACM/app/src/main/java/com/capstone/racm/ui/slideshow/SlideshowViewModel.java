@@ -10,7 +10,7 @@ public class SlideshowViewModel extends ViewModel {
 
     public SlideshowViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("시세 정보 뷰");
+        mText.setValue("일정 계획 뷰");
     }
 
     public LiveData<String> getText() {
