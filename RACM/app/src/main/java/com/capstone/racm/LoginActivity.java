@@ -23,8 +23,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-
         layout = findViewById(R.id.layout);
         tbtn_forget = findViewById(R.id.tbtn_forget);
         tbtn_signup = findViewById(R.id.tbtn_signup);
